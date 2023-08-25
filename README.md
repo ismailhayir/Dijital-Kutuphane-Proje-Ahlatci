@@ -1,5 +1,9 @@
 # Dijital Kutupane Proje Ahlatci
- Vektörel Bilişim ve Ahlatçı Holding işbirliği ile düzenlenen eğitim sonunda yapmış olduğum dijital kütüphnae projesidir.
+ Vektörel Bilişim ve Ahlatçı Holding işbirliği ile düzenlenen eğitim sonunda yapmış olduğum dijital kütüphane projesidir.
+
+ASP.NET Core MVC, PDF Viewer, Web API, Newtonsoft.Json, Identity Server and EntityFramework.
+
+
 Ana Sayfa
 <img src="https://github.com/ismailhayir/Dijital-Kutupane-Proje-Ahlatci/blob/main/ss.png" width="auto">
 
