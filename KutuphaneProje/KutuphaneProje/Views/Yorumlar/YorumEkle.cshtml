@@ -1,0 +1,29 @@
+﻿@model Yorum
+
+<form asp-action="YorumEkle" method="post">
+
+    <div style="display:none" class="form-group">
+        <label asp-for="id"></label>
+        <input asp-for="id" value="2" class="form-control" />
+        <span asp-validation-for="id" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="KitapAdi">Kitap Adı</label>
+        <input asp-for="KitapAdi" class="form-control" />
+        <span asp-validation-for="KitapAdi" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Adi">Adınız</label>
+        <input asp-for="Adi" class="form-control" />
+        <span asp-validation-for="Adi" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="YorumAciklama">Yorumunuz</label>
+        <input asp-for="YorumAciklama" class="form-control" />
+        <span asp-validation-for="YorumAciklama" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>
+

@@ -1,0 +1,18 @@
+﻿@model List<Book>
+
+
+
+<div class="row">
+    @foreach (var book in Model)
+    {
+        <div style="margin-top:25px;" class="col-lg-3">
+            <center>
+            <img style="height:320px;" src="@book.KitapImg">
+            <h4 style="margin-top:10px">@book.KitapAdi</h4>
+                <button onclick="location.href='Oku/Details/@book.id'" class="btn btn-az-primary btn-block">Kitabı Oku</button>
+            </center>
+        </div>
+    }
+</div>
+
+

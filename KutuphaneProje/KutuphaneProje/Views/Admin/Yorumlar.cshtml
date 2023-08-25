@@ -1,0 +1,14 @@
+﻿@model List<Yorum>
+
+<h2>Yorumlar</h2>
+@foreach (var yorum in Model)
+{
+    <table>
+        <tr>
+            <td style="width: 90%">@yorum.YorumAciklama</td>
+            <td style="width: 5%">
+                <a asp-controller="Admin" asp-action="YorumSil" asp-route-id="@yorum.id">Sil</a>
+            </td>
+        </tr>
+    </table>
+}

@@ -1,0 +1,23 @@
+﻿@model List<Book>
+
+@foreach (var book in Model)
+{
+    <table>
+    <tr>
+        <td style="width: 90%">@book.KitapAdi</td>
+        <td style="width: 5%">
+            <a asp-controller="Admin" asp-action="Delete" asp-route-id="@book.id">Sil</a>
+        </td>
+        <td style="width: 5%">
+            <a asp-controller="Admin" asp-action="KitapGuncelle" asp-route-id="@book.id">Güncelle</a>
+        </td>
+    </tr>
+    </table>
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+{
+    <script>
+        alert('@Html.Raw(ViewBag.SuccessMessage)');
+    </script>
+}
